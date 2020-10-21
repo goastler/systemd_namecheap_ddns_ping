@@ -1,0 +1,10 @@
+[Unit]
+Description=my.domain.name dynamic dns update
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=curl "https://dynamicdns.park-your-domain.com/update?host=*&domain=my.domain.name&password=my-password"
+
+[Install]
+WantedBy=multi-user.target
