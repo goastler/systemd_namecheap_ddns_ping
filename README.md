@@ -1,0 +1,1 @@
+systemd_namecheap_ddns_ping
