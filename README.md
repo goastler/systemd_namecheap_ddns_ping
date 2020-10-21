@@ -9,5 +9,5 @@ Systemd service and timer for pinging namecheap to update ddns records.
 - Rename the service and timer to something more meaningful for you (I usually use the domain name, i.e. www.example.com.service and www.example.com.timer). Make sure both are named the same apart from file extension.
 - Copy both files into /etc/system/systemd
 - Enable and start the timer, which will trigger the service as required
--- `systemctl enable <whatever you called your file>.timer`
--- `systemctl start <whatever you called your file>.timer`
+  - `systemctl enable <whatever you called your file>.timer`
+  - `systemctl start <whatever you called your file>.timer`
